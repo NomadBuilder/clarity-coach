@@ -1,8 +1,8 @@
-# 🎙️ AI Meeting Recorder & Analyzer
+# 🎯 Clarity Coach
 
-> **Transform your meetings into actionable insights with AI-powered recording, transcription, and analysis.**
+> **Transform your meetings into actionable insights with AI-powered recording, transcription, and clarity analysis.**
 
-An intelligent meeting assistant that automatically records, transcribes, and analyzes your meetings to extract maximum value from every conversation.
+An intelligent meeting assistant that automatically records, transcribes, and analyzes your meetings to improve communication clarity and extract maximum value from every conversation.
 
 ## 🚀 **Core Features**
 
@@ -18,11 +18,11 @@ An intelligent meeting assistant that automatically records, transcribes, and an
 - **Meeting ROI Analysis** - Effectiveness scoring and time investment evaluation
 - **Follow-up Recommendations** - Smart suggestions for next meetings and stakeholders
 
-### **💬 Communication Quality Analysis**
-- **"Bullshit Meter"** - Analyzes jargon, filler words, and communication clarity
-- **Speaker-by-Speaker Breakdown** - Individual communication effectiveness scores
+### **💬 Communication Clarity Analysis**
+- **Clarity Coach** - Analyzes jargon, filler words, and communication effectiveness
+- **Speaker-by-Speaker Breakdown** - Individual communication clarity scores
 - **Meeting Dynamics** - Interruption patterns, speaker dominance, and alignment analysis
-- **Improvement Suggestions** - Actionable feedback for better future communication
+- **Clarity Improvement Suggestions** - Actionable feedback for better future communication
 
 ## 🎨 **Enhanced Output Structure**
 
@@ -38,10 +38,10 @@ Your meeting analysis includes:
 
 ### **👥 Communication Insights**
 - **Speaker Summary** - Individual contribution analysis
-- **Communication Quality Scores** - Clarity and effectiveness ratings
+- **Communication Clarity Scores** - Clarity and effectiveness ratings
 - **Filler Word Analysis** - Quantified communication patterns
 - **Meeting Dynamics** - Interaction and engagement patterns
-- **Improvement Recommendations** - Actionable communication tips
+- **Clarity Improvement Recommendations** - Actionable communication tips
 
 ### **📅 Strategic Planning**
 - **Follow-up Recommendations** - Next meeting suggestions
@@ -144,7 +144,7 @@ Analyze existing transcripts for communication quality.
 - **🔊 Audio Recording** - `YYYY-MM-DD_HH-MM_Meeting_Name.wav`
 - **📜 Transcript** - `output_*/transcription.txt` (with speaker diarization)
 - **📝 Enhanced Summary** - `output_*/summary_gemini.md` (comprehensive analysis)
-- **💬 Communication Analysis** - `output_*/bullshit_report.md` (quality insights)
+- **💬 Clarity Analysis** - `output_*/bullshit_report.md` (communication insights)
 
 ### **Additional Formats**
 - **SRT Subtitles** - `output_*/Meeting_Name.srt`
@@ -180,7 +180,7 @@ Analyze existing transcripts for communication quality.
 - **4-Focused Analysis** - Multiple AI calls for comprehensive coverage
 - **Smart Action Extraction** - Automatic task identification and assignment
 - **Risk Proactive Detection** - Identifies potential issues before they become problems
-- **Communication Quality Scoring** - Quantified feedback on meeting effectiveness
+- **Communication Clarity Scoring** - Quantified feedback on meeting effectiveness
 
 ### **⚡ Productivity Boost**
 - **Zero Manual Work** - Fully automated from recording to analysis
@@ -190,7 +190,7 @@ Analyze existing transcripts for communication quality.
 
 ### **🎨 Professional Quality**
 - **Meeting ROI Assessment** - Understand the value of your time investment
-- **Speaker Analysis** - Individual contribution and communication effectiveness
+- **Speaker Analysis** - Individual contribution and communication clarity
 - **Strategic Recommendations** - Smart suggestions for follow-up meetings
 - **Multi-format Output** - Choose the format that works best for your workflow
 
