@@ -77,7 +77,7 @@ Your meeting analysis includes:
    ```bash
    python3.11 -m venv whisperx-311-env
    source whisperx-311-env/bin/activate
-   pip install python-dotenv
+   pip install python-dotenv weasyprint markdown
    pip install git+https://github.com/m-bain/whisperX.git
    ```
 
@@ -144,6 +144,7 @@ Analyze existing transcripts for communication quality.
 - **🔊 Audio Recording** - `YYYY-MM-DD_HH-MM_Meeting_Name.wav`
 - **📜 Transcript** - `output_*/transcription.txt` (with speaker diarization)
 - **📝 Enhanced Summary** - `output_*/summary_gemini.md` (comprehensive analysis)
+- **📄 PDF Report** - `output_*/summary_gemini.pdf` (beautiful, shareable PDF)
 - **💬 Clarity Analysis** - `output_*/bullshit_report.md` (communication insights)
 
 ### **Additional Formats**
@@ -192,6 +193,7 @@ Analyze existing transcripts for communication quality.
 - **Meeting ROI Assessment** - Understand the value of your time investment
 - **Speaker Analysis** - Individual contribution and communication clarity
 - **Strategic Recommendations** - Smart suggestions for follow-up meetings
+- **Beautiful PDF Reports** - Professional, shareable PDFs with styling and iconography
 - **Multi-format Output** - Choose the format that works best for your workflow
 
 ### **🔒 Enterprise Ready**

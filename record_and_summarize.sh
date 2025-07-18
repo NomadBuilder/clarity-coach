@@ -8,6 +8,7 @@ AUDIO_FILE="${FILENAME}.wav"
 OUTPUT_DIR="output_${FILENAME}"
 SUMMARY_FILE="${OUTPUT_DIR}/summary_gemini.md"
 BULLSHIT_FILE="${OUTPUT_DIR}/bullshit_report.md"
+PDF_FILE="${OUTPUT_DIR}/summary_gemini.pdf"
 
 # Load environment variables from .env if present
 if [ -f .env ]; then
@@ -166,16 +167,32 @@ else
   echo "⚠️ No bullshit report found to append."
 fi
 
-# === STEP 8: OPEN FOLDER AND SUMMARY FILE ===
+# === STEP 8: GENERATE PDF ===
+echo "📄 Generating PDF report..."
+if [ -f "$SUMMARY_FILE" ]; then
+  python3 generate_pdf.py "$SUMMARY_FILE" "$PDF_FILE"
+  if [ -f "$PDF_FILE" ]; then
+    echo "✅ PDF report generated: $PDF_FILE"
+  else
+    echo "⚠️ PDF generation failed, but markdown summary is available"
+  fi
+else
+  echo "⚠️ No summary file found for PDF generation"
+fi
+
+# === STEP 9: OPEN FOLDER AND FILES ===
 echo "📂 Opening summary folder..."
 open "$OUTPUT_DIR"
-if [ -f "$SUMMARY_FILE" ]; then
+if [ -f "$PDF_FILE" ]; then
+  open "$PDF_FILE"
+elif [ -f "$SUMMARY_FILE" ]; then
   open "$SUMMARY_FILE"
 fi
 
-# === STEP 9: SHOW FILE PATHS ===
+# === STEP 10: SHOW FILE PATHS ===
 echo -e "\n📁 Files saved:"
 echo "🔊 Audio:       $AUDIO_FILE"
 echo "📜 Transcript:  ${OUTPUT_DIR}/transcription.txt"
 echo "📝 Summary:     $SUMMARY_FILE"
 echo "🧪 Bullshit:    $BULLSHIT_FILE"
+echo "📄 PDF Report:  $PDF_FILE"
