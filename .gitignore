@@ -1,0 +1,16 @@
+.env
+*.wav
+output_*/
+whisperx-*/env/
+whisperx-*/bin/
+whisperx-*/lib/
+whisperx-*/include/
+whisperx-*/share/
+whisperx-*/pyvenv.cfg
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so 
