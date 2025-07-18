@@ -116,11 +116,13 @@ def main():
     if "output_" in output_dir.name:
         meeting_name = output_dir.name.replace("output_", "").replace("_", " ")
     
-    # Try to extract timestamp from filename
-    if "_" in input_path.stem:
-        parts = input_path.stem.split("_")
-        if len(parts) >= 2:
-            timestamp = f"{parts[0]} {parts[1].replace('-', ':')}"
+    # Try to extract timestamp from directory name (output_YYYY-MM-DD_HH-MM_MeetingName)
+    if "output_" in output_dir.name:
+        dir_parts = output_dir.name.replace("output_", "").split("_")
+        if len(dir_parts) >= 2:
+            date_part = dir_parts[0]  # YYYY-MM-DD
+            time_part = dir_parts[1]  # HH-MM
+            timestamp = f"{date_part} {time_part.replace('-', ':')}"
     
     success = convert_markdown_to_pdf(input_file, output_file, meeting_name, timestamp)
     
